@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh; /* Para ocupar al menos el alto de la pantalla */
+    background: linear-gradient(135deg, #0d0d0d, #001214);
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Movido aquí para aplicarlo a todo el documento */
+    color: #ffbdba; /* Color de texto predeterminado */
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    filter: opacity(0.5%);
+    transition: all 200ms ease-in-out;
+}
+
+p:hover {
+    filter: none;
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    h1, h2 {
+        font-size: 4vw; /* Tamaño de fuente responsivo */
+    }
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
